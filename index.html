@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030814">
+  <title>Our First Month Together</title>
+  <meta name="description" content="A little something for Cookie — Alok ♡ Cookie, one month together.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- Decorative atmosphere (hidden from assistive tech) -->
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="moonlight" aria-hidden="true"></div>
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+    <defs><clipPath id="heartClip" clipPathUnits="objectBoundingBox">
+      <path d="M0.5,0.95 C0.1,0.65 0,0.4 0,0.28 C0,0.1 0.12,0 0.27,0 C0.38,0 0.46,0.06 0.5,0.15 C0.54,0.06 0.62,0 0.73,0 C0.88,0 1,0.1 1,0.28 C1,0.4 0.9,0.65 0.5,0.95Z"/>
+    </clipPath></defs>
+  </svg>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <!-- INTRO: opens like a letter -->
+  <section id="intro" class="intro" aria-label="Introduction">
+    <p class="eyebrow">A little something for Cookie</p>
+    <h1 class="intro-title">Happy<br>1 Month</h1>
+    <p class="names">Alok ♡ Cookie</p>
+    <button id="openBtn" class="btn" type="button">Open our little story ♡</button>
+  </section>
+
+  <main id="story" class="story">
+
+    <!-- SECTION 1: THE DATE -->
+    <section class="panel" id="date">
+      <h2 class="label reveal">The day it all started</h2>
+      <div class="calendar reveal" role="img" aria-label="Thursday, October 1st">
+        <span class="cal-month">October</span>
+        <span class="cal-day">01</span>
+        <span class="cal-week">Thursday</span>
+        <span class="cal-heart" aria-hidden="true">♥</span>
+      </div>
+      <p class="lead reveal">One month ago,<br>our little story began.</p>
+      <p class="small reveal">October 1st, 2026</p>
+    </section>
+
+    <!-- SECTION 2: OUR STORY -->
+    <section class="panel" id="story-section">
+      <h2 class="label reveal">Our story</h2>
+      <p class="lead reveal">One month.<br>So many little moments.</p>
+      <ol class="timeline">
+        <li class="memory reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+          </span>
+          <div><h3>Songs between us</h3>
+          <p>Listening to songs while working, somehow making the distance feel a little smaller.</p></div>
+        </li>
+        <li class="memory reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          </span>
+          <div><h3>Falling asleep thinking of each other</h3>
+          <p>Even when we're far apart, you still end up being the last thought of the day.</p></div>
+        </li>
+        <li class="memory reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+          </span>
+          <div><h3>Little voice notes</h3>
+          <p>Voice notes full of kisses, tiny moments, and an ‘I love you’ that somehow never gets old.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SECTION 3: LETTER -->
+    <section class="panel" id="letter-section">
+      <article class="letter reveal">
+        <h2 class="label">For Cookie</h2>
+        <p>A whole month might not sound like a very long time, but somehow you've made so many little moments feel special.</p>
+        <p>I love the way you care about the people close to you. You're genuinely kind, and the way you look after everyone says so much about the beautiful person you are.</p>
+        <p>Being long distance isn't always easy, but every voice note, every sleepy thought and every little ‘I love you’ makes the distance feel worth crossing.</p>
+        <p class="pwincess">I love you pwincess.</p>
+        <p class="sign">— Alok ♡</p>
+      </article>
+    </section>
+
+    <!-- SECTION 4: COUNTER -->
+    <section class="panel" id="counter-section">
+      <h2 class="label reveal">A little milestone</h2>
+      <p class="lead reveal">We've been us for</p>
+      <div class="counter reveal" role="timer" aria-label="Time together since October 1st, 2026">
+        <div><span id="cDays">0</span><small>Days</small></div>
+        <div><span id="cHours">0</span><small>Hours</small></div>
+        <div><span id="cMinutes">0</span><small>Minutes</small></div>
+        <div><span id="cSeconds">0</span><small>Seconds</small></div>
+      </div>
+      <p class="small reveal">and counting…</p>
+    </section>
+
+    <!-- OUR MEMORIES: opens the gallery -->
+    <section class="panel" id="memories">
+      <h2 class="label reveal">Our memories</h2>
+      <p class="lead reveal">Every picture,<br>a little forever.</p>
+      <button id="galleryBtn" class="btn reveal" type="button" aria-haspopup="dialog">Open our gallery ♡</button>
+    </section>
+
+    <!-- FINAL: SURPRISE -->
+    <section class="panel finale" id="finale">
+      <p class="label seq">And before you go…</p>
+      <div class="big-heart seq" aria-hidden="true">♥</div>
+      <h2 class="finale-title seq">Happy first month,<br>Cookie.</h2>
+      <p class="lead seq">Here's to this little beginning<br>and all the moments still waiting for us.</p>
+      <p class="iloveyou seq">I LOVEEE<br>YOUUU</p>
+      <p class="sign seq">— Alok, always ♡</p>
+    </section>
+
+  </main>
+
+  <!-- Gallery: the heart bouquet -->
+  <div id="galleryView" class="gview" hidden role="dialog" aria-modal="true" aria-labelledby="gTitle">
+    <button class="gclose" id="galleryClose" type="button" aria-label="Close gallery">&times;</button>
+    <p class="label">Our memories</p>
+    <h2 id="gTitle" class="lead">Every petal<br>is a memory.</h2>
+    <div class="bouquet" id="bouquetBox" role="group" aria-label="Heart bouquet photo gallery"></div>
+    <p class="small">tap a heart to open it</p>
+  </div>
+
+  <!-- Fullscreen photo viewer -->
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <img alt="">
+    <button class="lb-nav lb-next" type="button" aria-label="Next photo">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
